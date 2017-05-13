@@ -22,12 +22,56 @@ html {
   background-color: #fff;
   height: 80vh;
 }
-.site-container p, .site-container span, .site-container li {
+.site-container p, .site-container span, .site-container li, .site-container button {
   font-size: 1.8rem;
   font-weight: 300;
 }
 .site-container div {
   margin-bottom: 20px;
+}
+.site-container button {
+  border: none;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #0287D0;
+  color: #fff;
+}
+.site-container .package-wrapper {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  box-direction: normal;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-direction: row;
+}
+.site-container .package-wrapper .single-package {
+  margin: 10px;
+  width: 250px;
+}
+.site-container .package-wrapper .single-package h2 {
+  background-color: #0287D0;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  font-size: 2.75rem;
+  font-weight: 300;
+}
+.site-container .package-wrapper .single-package p {
+  font-size: 1.8rem;
+}
+.site-container .package-wrapper .single-package p.price {
+  text-align: center;
 }
 @media (min-width: 768px) {
   .site-container {

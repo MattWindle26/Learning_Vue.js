@@ -15,7 +15,7 @@ html{
   background-color: $white;
   height: 80vh;
 
-  p, span, li{
+  p, span, li, button{
     font-size: 1.8rem;
     font-weight: 300;
   }
@@ -24,6 +24,39 @@ html{
     margin-bottom: 20px;
   }
 
+  button{
+    border: none;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: $primaryColor;
+    color: $white;
+  }
+
+
+  .package-wrapper{
+    @include display(flex);
+    @include flex-direction(row);
+    .single-package{
+      margin: 10px;
+      width: 250px;
+      h2{
+        background-color: $primaryColor;
+        color: $white;
+        padding: 10px;
+        text-align: center;
+        font-size: 2.75rem;
+        font-weight: 300;
+      }
+      p{
+        font-size: 1.8rem;
+        &.price{
+          // @include display(flex);
+          // @include justify-content(flex-start);
+          text-align: center;
+        }
+      }
+    }
+  }
   @media #{$tablet}{
     padding: 25px;
   }
